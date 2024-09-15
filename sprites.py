@@ -58,7 +58,7 @@ class Icon:
     # Draw the box
     pygame.draw.rect(screen, WHITE, (self.x, self.y, TILESIZE, TILESIZE), 1)
 
-  def is_mouse_over(self, mx, my):
+  def is_mouse_over(self, mx: int, my: int):
     return self.x <= mx <= self.x + TILESIZE and \
             self.y <= my <= self.y + TILESIZE
 
@@ -102,7 +102,7 @@ class Board:
       for icon in row:
         icon.draw(screen)
 
-  def is_clicked(self, mx, my) -> Optional[Icon]:
+  def is_clicked(self, mx: int, my: int) -> Optional[Icon]:
     for row in self.data:
       for icon in row:
         if icon.is_mouse_over(mx, my) and not icon.revealed:
