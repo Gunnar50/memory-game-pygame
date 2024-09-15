@@ -1,0 +1,26 @@
+settings file
+
+icon class
+    draw all shapes
+
+test each icon
+
+board class
+    create icons
+    create board
+    draw board
+
+def highlight tile
+
+first selection
+second selection
+
+mouse events + is clicked func
+
+update func
+
+start game
+
+has won
+
+end game
